@@ -1,0 +1,9 @@
+{
+  "name": "Pawvera Grooming",
+  "short_name": "Pawvera",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#071525",
+  "icons": []
+}

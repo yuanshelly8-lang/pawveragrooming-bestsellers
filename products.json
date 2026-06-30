@@ -1,0 +1,26 @@
+[
+  {
+    "model": "Model 55",
+    "name": "Model 55 LCD Pet Clipper",
+    "slug": "product-model55.html",
+    "description": "Best-selling LCD pet clipper with 6500 RPM motor, USB-C charging dock and premium grooming kit for wholesale buyers."
+  },
+  {
+    "model": "Model 95",
+    "name": "Model 95 Ultra-Quiet Pet Clipper",
+    "slug": "product-model95.html",
+    "description": "Low-noise pet clipper with LED battery display, ceramic + titanium blade and full grooming kit."
+  },
+  {
+    "model": "Model 99",
+    "name": "Model 99 All-Metal Pet Clipper",
+    "slug": "product-model99.html",
+    "description": "All-metal body pet clipper with LCD display, 6500 RPM motor and stainless steel blade."
+  },
+  {
+    "model": "Model B60",
+    "name": "Model B60 Fast-Charge Pet Clipper",
+    "slug": "product-b60.html",
+    "description": "Modern LCD pet clipper with USB-C fast charging, 6 comb guides and multiple color options."
+  }
+]

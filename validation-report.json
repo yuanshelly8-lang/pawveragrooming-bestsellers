@@ -1,0 +1,44 @@
+{
+  "domain": "https://pawveragrooming.com",
+  "html_pages": 29,
+  "missing_internal_assets": [],
+  "product_pages": {
+    "C28": {
+      "gallery_thumbnails": 5,
+      "domain_ok": true,
+      "whatsapp_ok": true,
+      "images_exist": true
+    },
+    "C59": {
+      "gallery_thumbnails": 5,
+      "domain_ok": true,
+      "whatsapp_ok": true,
+      "images_exist": true
+    },
+    "D88": {
+      "gallery_thumbnails": 5,
+      "domain_ok": true,
+      "whatsapp_ok": true,
+      "images_exist": true
+    },
+    "A53": {
+      "gallery_thumbnails": 5,
+      "domain_ok": true,
+      "whatsapp_ok": true,
+      "images_exist": true
+    },
+    "A83": {
+      "gallery_thumbnails": 5,
+      "domain_ok": true,
+      "whatsapp_ok": true,
+      "images_exist": true
+    },
+    "P45": {
+      "gallery_thumbnails": 5,
+      "domain_ok": true,
+      "whatsapp_ok": true,
+      "images_exist": true
+    }
+  },
+  "generated_images": 60
+}

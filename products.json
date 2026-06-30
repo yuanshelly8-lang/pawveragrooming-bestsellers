@@ -1,26 +1,182 @@
 [
   {
-    "model": "Model 55",
-    "name": "Model 55 LCD Pet Clipper",
-    "slug": "product-model55.html",
-    "description": "Best-selling LCD pet clipper with 6500 RPM motor, USB-C charging dock and premium grooming kit for wholesale buyers."
+    "model": "A53",
+    "name": "A53 Professional Cordless Pet Clipper",
+    "slug": "product-a53.html",
+    "description": "Professional 6500 RPM pet clipper with 180 min runtime and 2000mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/Hcc62f9315b23434f99375e1f41be9db4m.jpg",
+    "price": "$11.90",
+    "moq": "2 pcs"
   },
   {
-    "model": "Model 95",
-    "name": "Model 95 Ultra-Quiet Pet Clipper",
-    "slug": "product-model95.html",
-    "description": "Low-noise pet clipper with LED battery display, ceramic + titanium blade and full grooming kit."
+    "model": "FK-9003",
+    "name": "FK-9003 IPX6 Waterproof Pet Clipper",
+    "slug": "product-fk-9003.html",
+    "description": "Professional 7000 RPM pet clipper with 180 min runtime and 2000mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/H972bca97235d4388ac1cd2cc0a8ea6f2C.jpg",
+    "price": "$7.68",
+    "moq": "2 pcs"
   },
   {
-    "model": "Model 99",
-    "name": "Model 99 All-Metal Pet Clipper",
-    "slug": "product-model99.html",
-    "description": "All-metal body pet clipper with LCD display, 6500 RPM motor and stainless steel blade."
+    "model": "A5-PRO",
+    "name": "A5-PRO Heavy Duty Pet Clipper",
+    "slug": "product-a5-pro.html",
+    "description": "Professional 4200 RPM pet clipper with 120 min runtime and 10.8V Li-ion battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/H0c407a01d2d44733bd900db4da36916f5.jpg",
+    "price": "$69.00",
+    "moq": "10 pcs"
   },
   {
-    "model": "Model B60",
-    "name": "Model B60 Fast-Charge Pet Clipper",
-    "slug": "product-b60.html",
-    "description": "Modern LCD pet clipper with USB-C fast charging, 6 comb guides and multiple color options."
+    "model": "D12-D",
+    "name": "D12-D High Power LCD Dog Trimmer",
+    "slug": "product-d12-d.html",
+    "description": "Professional 7000 RPM pet clipper with 150 min runtime and 1500mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/H9e58408c047c43d5815e92cc2e94d934f.jpg",
+    "price": "$7.20",
+    "moq": "1000 pcs"
+  },
+  {
+    "model": "PGC-818",
+    "name": "Shernbao PGC-818 Professional Clipper",
+    "slug": "product-pgc-818.html",
+    "description": "Professional 5000 RPM pet clipper with 180 min runtime and 2500mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/Hd75ee43502964b0dabc1e9f834f6a0b42.jpg",
+    "price": "$45.00",
+    "moq": "20 pcs"
+  },
+  {
+    "model": "T5-WP",
+    "name": "T5 Waterproof Professional Hair Shaver",
+    "slug": "product-t5-wp.html",
+    "description": "Professional 6500 RPM pet clipper with 120 min runtime and 1000mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/H8f61fbd1afe548f281b2d35f98940f63x.jpg",
+    "price": "$10.90",
+    "moq": "500 pcs"
+  },
+  {
+    "model": "EAGLE-M",
+    "name": "EagleM 5-in-1 Quiet Pet Trimmer",
+    "slug": "product-eagle-m.html",
+    "description": "Professional 6500 RPM pet clipper with 180 min runtime and 2000mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/H2a63759824364740b8bb89e07c8c5e3cE.png",
+    "price": "$199.00",
+    "moq": "10 pcs"
+  },
+  {
+    "model": "KM-1857",
+    "name": "Kemei KM-1857 9000RPM Pet Shaver",
+    "slug": "product-km-1857.html",
+    "description": "Professional 9000 RPM pet clipper with 180 min runtime and 4600mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/A7179131dee764047912057349a3dfe69w.png",
+    "price": "$38.50",
+    "moq": "40 pcs"
+  },
+  {
+    "model": "V-206",
+    "name": "VGR V-206 Powerful Electric Clipper",
+    "slug": "product-v-206.html",
+    "description": "Professional 6500 RPM pet clipper with 150 min runtime and 2000mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/Hd517a8e03c7e41d097046b0738462e81E.jpg",
+    "price": "$8.46",
+    "moq": "20 pcs"
+  },
+  {
+    "model": "P2-PRO",
+    "name": "P2-PRO No.1 Low Noise Clipper",
+    "slug": "product-p2-pro.html",
+    "description": "Professional 6500 RPM pet clipper with 120 min runtime and 1000mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/H141e903466c245fe92d60e923cf8b588E.jpg",
+    "price": "$6.60",
+    "moq": "500 pcs"
+  },
+  {
+    "model": "W061",
+    "name": "W061 Safe Professional Pet Cutter",
+    "slug": "product-w061.html",
+    "description": "Professional 6500 RPM pet clipper with 120 min runtime and 1000mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/Hc19b511da7e647b486b516dce40cd499I.jpg",
+    "price": "$4.60",
+    "moq": "1 set"
+  },
+  {
+    "model": "MC-680",
+    "name": "MC-680 Adjustable Speed Trimmer",
+    "slug": "product-mc-680.html",
+    "description": "Professional 6500 RPM pet clipper with 180 min runtime and 2000mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/Hacec1c4ef8f147a6810ce467694fc258e.jpg",
+    "price": "$44.00",
+    "moq": "50 pcs"
+  },
+  {
+    "model": "S55-GOLD",
+    "name": "S55 Gold LCD Pet Clipper",
+    "slug": "product-s55-gold.html",
+    "description": "Professional 6500 RPM pet clipper with 180 min runtime and 2000mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/H18a6d1a30f9748c78ca8ae7827661376f.jpg",
+    "price": "$12.00",
+    "moq": "10 pcs"
+  },
+  {
+    "model": "M99-METAL",
+    "name": "M99 All-Metal Body Clipper",
+    "slug": "product-m99-metal.html",
+    "description": "Professional 6500 RPM pet clipper with 180 min runtime and 2000mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/H351b54e7b0ae4096a41e82c013d6c423b.jpg",
+    "price": "$15.00",
+    "moq": "10 pcs"
+  },
+  {
+    "model": "M95-QUIET",
+    "name": "M95 Ultra-Quiet Clipper",
+    "slug": "product-m95-quiet.html",
+    "description": "Professional 6500 RPM pet clipper with 180 min runtime and 2000mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/Hb38998581f2446f395254cf0e8497addl.jpg",
+    "price": "$11.00",
+    "moq": "10 pcs"
+  },
+  {
+    "model": "B60-FAST",
+    "name": "B60 Fast-Charge Modern Clipper",
+    "slug": "product-b60-fast.html",
+    "description": "Professional 6500 RPM pet clipper with 180 min runtime and 2000mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/H7d544f58fa674e699ae0bfba030aa3c4W.jpg",
+    "price": "$15.00",
+    "moq": "10 pcs"
+  },
+  {
+    "model": "L5-PRO",
+    "name": "L5-PRO Professional 5-in-1 Kit",
+    "slug": "product-l5-pro.html",
+    "description": "Professional 6500 RPM pet clipper with 180 min runtime and 2000mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/Hed8efee98ad444908b4726f696f5fa14w.jpg",
+    "price": "$199.00",
+    "moq": "1 pc"
+  },
+  {
+    "model": "FK-118",
+    "name": "FK-118 3-Speed LCD Clipper",
+    "slug": "product-fk-118.html",
+    "description": "Professional 7000 RPM pet clipper with 150 min runtime and 2000mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/H15d2ca15fb2d4af5bdf4c05bd9aff795S.jpg",
+    "price": "$8.55",
+    "moq": "20 pcs"
+  },
+  {
+    "model": "PGC-780",
+    "name": "Shernbao PGC-780 5-Speed Smart Clipper",
+    "slug": "product-pgc-780.html",
+    "description": "Professional 7000 RPM pet clipper with 180 min runtime and 2500mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/H1af5bb91bd854b608f5f4b8b43a78782d.png",
+    "price": "$26.00",
+    "moq": "1 unit"
+  },
+  {
+    "model": "PGC-880",
+    "name": "Shernbao PGC-880 LED Cool-running Clipper",
+    "slug": "product-pgc-880.html",
+    "description": "Professional 6500 RPM pet clipper with 180 min runtime and 2500mAh battery. Ideal for wholesale and OEM projects.",
+    "img": "https://s.alicdn.com/@sc04/kf/H5c2221ee841c424eb1dcb3dbc24294c2o.jpg",
+    "price": "$40.00",
+    "moq": "1 pc"
   }
 ]

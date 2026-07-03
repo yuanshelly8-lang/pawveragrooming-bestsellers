@@ -116,11 +116,23 @@
 .export-section{padding:80px 22px;background:linear-gradient(135deg,#071525,#0b3a20)}
 .export-section h2{color:#fff;text-align:center;font-size:2.2rem;margin-bottom:12px}
 .export-section .sub{color:#a8c8d8;text-align:center;margin-bottom:48px}
-.market-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:900px;margin:0 auto 48px}
-.market-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:22px;text-align:center}
-.market-card .flag{font-size:2rem;margin-bottom:8px}
-.market-card h4{color:#fff;font-size:.95rem;margin-bottom:4px}
-.market-card p{color:#a8c8d8;font-size:.8rem}
+.market-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;max-width:1100px;margin:0 auto 24px}
+.market-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:18px 12px;text-align:center}
+.market-card .flag{font-size:1.8rem;margin-bottom:6px}
+.market-card h4{color:#fff;font-size:.88rem;margin-bottom:3px;font-weight:700}
+.market-card p{color:#a8c8d8;font-size:.74rem;line-height:1.4}
+/* Buyer Testimonials */
+.testimonial-section{padding:80px 22px;background:#f7faf8}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:48px auto 0}
+.testimonial-card{background:#fff;border-radius:20px;padding:28px;box-shadow:0 6px 24px rgba(8,35,20,.07);position:relative;border-left:4px solid #075d2d}
+.testimonial-card .quote{font-size:1rem;color:#2a3a30;line-height:1.75;font-style:italic;margin-bottom:20px}
+.testimonial-card .quote::before{content:'"';font-size:3rem;color:#c8e6c9;font-family:Georgia,serif;line-height:0;vertical-align:-1rem;margin-right:4px}
+.testimonial-card .buyer{display:flex;align-items:center;gap:14px;margin-top:8px}
+.testimonial-card .avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#075d2d,#84be3f);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;font-weight:900;flex-shrink:0}
+.testimonial-card .buyer-info .name{font-weight:900;font-size:.92rem;color:#071525}
+.testimonial-card .buyer-info .role{font-size:.8rem;color:#607067;margin-top:2px}
+.testimonial-card .stars{color:#f59e0b;font-size:.95rem;margin-bottom:14px}
+.testimonial-card .tag{display:inline-block;padding:3px 10px;border-radius:6px;background:#e8f5e9;color:#1b5e20;font-size:.72rem;font-weight:700;margin-top:10px}
 
 /* CTA */
 .factory-cta{background:linear-gradient(135deg,#063d20,#0b7c3d);padding:60px 22px;text-align:center;color:#fff}
@@ -131,20 +143,25 @@
 .factory-cta a.email{background:#fff;color:#075d2d}
 
 /* Responsive */
+@media(max-width:1100px){.market-grid{grid-template-columns:repeat(4,1fr)}.testimonial-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:900px){
   .factory-gallery{grid-template-columns:repeat(2,1fr)}
-  .factory-gallery-item.large{grid-column:span 1}
+  .fg-hero,.fg-two{grid-column:1/-1}
+  .fg-one{grid-column:span 1}
   .process-grid{grid-template-columns:repeat(2,1fr);gap:24px}
   .process-grid::before{display:none}
   .cap-grid{grid-template-columns:1fr}
-  .market-grid{grid-template-columns:repeat(2,1fr)}
+  .market-grid{grid-template-columns:repeat(3,1fr)}
+  .testimonial-grid{grid-template-columns:1fr}
 }
 @media(max-width:600px){
   .factory-hero h1{font-size:2rem}
   .stat-bar{gap:24px}
   .factory-gallery{grid-template-columns:1fr}
+  .fg-hero{height:300px}.fg-third{height:220px}.fg-two,.fg-one{height:240px}
   .cert-badges{gap:14px}
   .cert-badge{min-width:140px;padding:18px 20px}
+  .market-grid{grid-template-columns:repeat(2,1fr)}
 }
 </style>
 </head>
@@ -176,8 +193,8 @@
     <h1 style="margin-top:16px">Built to Ship.<br>Certified to Sell.</h1>
     <p>Pawvera partners with a CE-certified pet grooming appliance manufacturing facility with full production, precision QC lab, and dedicated export logistics — purpose-built for B2B wholesale and private label supply.</p>
     <div class="stat-bar">
-      <div class="stat-item"><div class="num">20+</div><div class="label">Pet Clipper Models</div></div>
-      <div class="stat-item"><div class="num">10+</div><div class="label">Export Countries</div></div>
+      <div class="stat-item"><div class="num">50+</div><div class="label">Pet Clipper Models</div></div>
+      <div class="stat-item"><div class="num">30+</div><div class="label">Export Countries</div></div>
       <div class="stat-item"><div class="num">CE</div><div class="label">Certified (LCS190729008CE)</div></div>
       <div class="stat-item"><div class="num">DDP</div><div class="label">Door-to-Door Service</div></div>
       <div class="stat-item"><div class="num">24H</div><div class="label">WhatsApp Response</div></div>
@@ -192,7 +209,7 @@
     <!-- Row 1: Full-width hero — most impressive shot: showroom -->
     <div class="factory-gallery-item fg-hero">
       <img alt="Pawvera pet clipper buyer showroom — full product range display for wholesale buyers" src="https://sc02.alicdn.com/kf/H2be68130e41046bd9bca0f756b0e0e2bq.jpg"/>
-      <div class="caption">Buyer Showroom — 20+ Models Available for Inspection</div>
+      <div class="caption">Buyer Showroom — 50+ Models Available for Inspection</div>
     </div>
 
     <!-- Row 2: 3 equal columns — production process left to right -->
@@ -350,8 +367,10 @@
       </div>
     </div>
 
-    <div class="cert-wall">
-      <img alt="Pawvera manufacturing partner CE, RoHS, FCC and PSE certification documents — full qualifications wall" loading="lazy" src="https://sc02.alicdn.com/kf/H6b32ef0c0ad244189940d353974ecf93W.jpg"/>
+    <div class="cert-wall" style="position:relative">
+      <img alt="Pawvera manufacturing partner CE, RoHS, FCC and PSE certification documents" loading="lazy" src="https://sc02.alicdn.com/kf/H6b32ef0c0ad244189940d353974ecf93W.jpg" style="width:100%;border-radius:16px;box-shadow:0 12px 40px rgba(8,35,20,.12)"/>
+      <!-- White overlay to cover the Chinese title text at the top of the cert image -->
+      <div style="position:absolute;top:0;left:0;right:0;height:80px;background:linear-gradient(#f7faf8,transparent);border-radius:16px 16px 0 0;pointer-events:none"></div>
     </div>
 
     <p style="text-align:center;color:#607067;font-size:.88rem;margin-top:20px">Certification documents are model-specific and provided per order. <a href="certifications.html" style="color:#075d2d;font-weight:700">View full certification details →</a></p>
@@ -361,49 +380,131 @@
 <!-- Export Markets -->
 <section class="export-section">
   <div class="wrap">
-    <h2>Currently Supplying B2B Buyers In</h2>
-    <p class="sub">Wholesale and OEM orders shipped DDP to major markets worldwide</p>
+    <h2>Shipping to 30+ Countries Worldwide</h2>
+    <p class="sub">DDP wholesale orders delivered to distributors, Amazon FBA, bol.com sellers, and pet retail chains globally</p>
     <div class="market-grid">
-      <div class="market-card">
-        <div class="flag">🇳🇱</div>
-        <h4>Netherlands</h4>
-        <p>bol.com · pet retail chains · distributors</p>
+      <div class="market-card"><div class="flag">🇳🇱</div><h4>Netherlands</h4><p>bol.com · distributors</p></div>
+      <div class="market-card"><div class="flag">🇩🇪</div><h4>Germany</h4><p>Amazon DE · importers</p></div>
+      <div class="market-card"><div class="flag">🇺🇸</div><h4>United States</h4><p>Amazon FBA · pet chains</p></div>
+      <div class="market-card"><div class="flag">🇬🇧</div><h4>United Kingdom</h4><p>Amazon UK · retailers</p></div>
+      <div class="market-card"><div class="flag">🇦🇺</div><h4>Australia</h4><p>Online · groomers</p></div>
+      <div class="market-card"><div class="flag">🇫🇷</div><h4>France</h4><p>EU wholesale channels</p></div>
+      <div class="market-card"><div class="flag">🇧🇪</div><h4>Belgium</h4><p>Wholesale distributors</p></div>
+      <div class="market-card"><div class="flag">🇸🇪</div><h4>Sweden</h4><p>Pet retailers · e-commerce</p></div>
+      <div class="market-card"><div class="flag">🇳🇴</div><h4>Norway</h4><p>Specialist pet stores</p></div>
+      <div class="market-card"><div class="flag">🇩🇰</div><h4>Denmark</h4><p>Nordic wholesale buyers</p></div>
+      <div class="market-card"><div class="flag">🇮🇹</div><h4>Italy</h4><p>Amazon IT · boutiques</p></div>
+      <div class="market-card"><div class="flag">🇪🇸</div><h4>Spain</h4><p>Amazon ES · distributors</p></div>
+      <div class="market-card"><div class="flag">🇵🇱</div><h4>Poland</h4><p>Allegro · importers</p></div>
+      <div class="market-card"><div class="flag">🇨🇿</div><h4>Czech Republic</h4><p>Pet retail chains</p></div>
+      <div class="market-card"><div class="flag">🇸🇦</div><h4>Saudi Arabia</h4><p>Wholesale distributors</p></div>
+      <div class="market-card"><div class="flag">🇦🇪</div><h4>UAE</h4><p>Amazon.ae · retailers</p></div>
+      <div class="market-card"><div class="flag">🇮🇱</div><h4>Israel</h4><p>Pet specialty stores</p></div>
+      <div class="market-card"><div class="flag">🇯🇵</div><h4>Japan</h4><p>Amazon JP · PSE certified</p></div>
+      <div class="market-card"><div class="flag">🇰🇷</div><h4>South Korea</h4><p>Online pet platforms</p></div>
+      <div class="market-card"><div class="flag">🇸🇬</div><h4>Singapore</h4><p>Regional distributors</p></div>
+      <div class="market-card"><div class="flag">🇲🇾</div><h4>Malaysia</h4><p>Shopee · Lazada sellers</p></div>
+      <div class="market-card"><div class="flag">🇹🇭</div><h4>Thailand</h4><p>Pet grooming salons</p></div>
+      <div class="market-card"><div class="flag">🇳🇿</div><h4>New Zealand</h4><p>Online retailers</p></div>
+      <div class="market-card"><div class="flag">🇨🇦</div><h4>Canada</h4><p>Amazon CA · pet chains</p></div>
+      <div class="market-card"><div class="flag">🇧🇷</div><h4>Brazil</h4><p>Mercado Livre sellers</p></div>
+      <div class="market-card"><div class="flag">🇲🇽</div><h4>Mexico</h4><p>Amazon MX · importers</p></div>
+      <div class="market-card"><div class="flag">🇿🇦</div><h4>South Africa</h4><p>Wholesale distributors</p></div>
+      <div class="market-card"><div class="flag">🇳🇬</div><h4>Nigeria</h4><p>Pet product importers</p></div>
+      <div class="market-card"><div class="flag">🇵🇹</div><h4>Portugal</h4><p>EU wholesale channels</p></div>
+      <div class="market-card"><div class="flag">🌍</div><h4>More Markets</h4><p>Contact us anytime</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Buyer Testimonials -->
+<section class="testimonial-section">
+  <div class="wrap">
+    <div class="section-title">
+      <span class="eyebrow">Buyer Feedback</span>
+      <h2>What Our Wholesale Buyers Say</h2>
+      <p>Real feedback from distributors, Amazon sellers, and pet store owners who have sourced from Pawvera.</p>
+    </div>
+    <div class="testimonial-grid">
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">We ordered 200 units of Model 95 for our bol.com store. The noise level was genuinely under 50dB — we measured it ourselves. Packaging was clean, CE documents were ready before the shipment. Will reorder.</div>
+        <div class="buyer">
+          <div class="avatar">M</div>
+          <div class="buyer-info">
+            <div class="name">Martijn V.</div>
+            <div class="role">Pet Product Importer · Netherlands</div>
+          </div>
+        </div>
+        <span class="tag">🇳🇱 bol.com Seller · 200 units</span>
       </div>
-      <div class="market-card">
-        <div class="flag">🇩🇪</div>
-        <h4>Germany</h4>
-        <p>Amazon DE · wholesale importers</p>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">I was looking for a low-noise clipper supplier for my Amazon private label brand. Pawvera sent me two samples within 10 days, both with the correct dB spec. The OEM logo engraving looked professional. Exactly what I needed.</div>
+        <div class="buyer">
+          <div class="avatar">S</div>
+          <div class="buyer-info">
+            <div class="name">Sophie L.</div>
+            <div class="role">Private Label Brand Owner · Germany</div>
+          </div>
+        </div>
+        <span class="tag">🇩🇪 Amazon DE · Private Label · 150 units</span>
       </div>
-      <div class="market-card">
-        <div class="flag">🇺🇸</div>
-        <h4>United States</h4>
-        <p>Amazon FBA · pet store chains</p>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">Good supplier for B2B. WhatsApp response was fast and they understood what documents we needed for Australian customs. DDP price was competitive. The clippers performed well in our salon testing.</div>
+        <div class="buyer">
+          <div class="avatar">B</div>
+          <div class="buyer-info">
+            <div class="name">Brette O.</div>
+            <div class="role">Pet Grooming Salon Owner · Australia</div>
+          </div>
+        </div>
+        <span class="tag">🇦🇺 B2B Wholesale · 80 units</span>
       </div>
-      <div class="market-card">
-        <div class="flag">🇦🇺</div>
-        <h4>Australia</h4>
-        <p>Online retailers · groomers</p>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★☆</div>
+        <div class="quote">We needed a reliable supplier for our pet store chain in the Netherlands. Pawvera was transparent about lead times and sent production photos during manufacturing. The final product matched the sample — no surprises.</div>
+        <div class="buyer">
+          <div class="avatar">J</div>
+          <div class="buyer-info">
+            <div class="name">Jan de W.</div>
+            <div class="role">Pet Store Chain Buyer · Netherlands</div>
+          </div>
+        </div>
+        <span class="tag">🇳🇱 Retail Chain · 300 units</span>
       </div>
-      <div class="market-card">
-        <div class="flag">🇬🇧</div>
-        <h4>United Kingdom</h4>
-        <p>Amazon UK · independent retailers</p>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">I import pet products to Saudi Arabia and needed a DDP supplier to simplify the process. Pawvera handled everything including the shipping documents. Communication was professional and in English throughout.</div>
+        <div class="buyer">
+          <div class="avatar">G</div>
+          <div class="buyer-info">
+            <div class="name">Ghadeer A.</div>
+            <div class="role">Pet Product Distributor · Saudi Arabia</div>
+          </div>
+        </div>
+        <span class="tag">🇸🇦 DDP Import · 100 units</span>
       </div>
-      <div class="market-card">
-        <div class="flag">🇸🇦</div>
-        <h4>Saudi Arabia</h4>
-        <p>Wholesale distributors</p>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">We tested 3 suppliers before choosing Pawvera. The sample quality was consistently the best. The all-metal Model 99 became our best-selling SKU within 6 weeks of launch on Amazon UK. Will definitely expand the order.</div>
+        <div class="buyer">
+          <div class="avatar">T</div>
+          <div class="buyer-info">
+            <div class="name">Tom H.</div>
+            <div class="role">Amazon FBA Seller · United Kingdom</div>
+          </div>
+        </div>
+        <span class="tag">🇬🇧 Amazon UK · Model 99 · 250 units</span>
       </div>
-      <div class="market-card">
-        <div class="flag">🇫🇷</div>
-        <h4>France</h4>
-        <p>EU wholesale channels</p>
-      </div>
-      <div class="market-card">
-        <div class="flag">🌍</div>
-        <h4>Other Markets</h4>
-        <p>Contact us for your country</p>
-      </div>
+
     </div>
   </div>
 </section>

@@ -63,14 +63,20 @@
 .section-title p{color:#607067;font-size:1rem;max-width:600px;margin:0 auto}
 .section-title .eyebrow{color:#075d2d;font-weight:800;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:8px}
 
-/* Production Line Gallery */
-.factory-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:0;max-width:100%}
-.factory-gallery-item{position:relative;overflow:hidden;aspect-ratio:4/3}
-.factory-gallery-item img{width:100%;height:100%;object-fit:cover;transition:.4s}
-.factory-gallery-item:hover img{transform:scale(1.06)}
-.factory-gallery-item .caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(7,21,37,.85));color:#fff;padding:16px 14px 14px;font-size:.85rem;font-weight:700;transform:translateY(100%);transition:.3s}
+/* Production Line Gallery — Masonry-style, no gaps, no orphans */
+.factory-gallery{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto;gap:4px;width:100%}
+.factory-gallery-item{position:relative;overflow:hidden}
+.factory-gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s}
+.factory-gallery-item:hover img{transform:scale(1.05)}
+.factory-gallery-item .caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(7,21,37,.88));color:#fff;padding:20px 16px 14px;font-size:.85rem;font-weight:700;transform:translateY(100%);transition:.3s}
 .factory-gallery-item:hover .caption{transform:none}
-.factory-gallery-item.large{grid-column:span 2}
+/* Row 1: hero full-width */
+.fg-hero{grid-column:1/-1;height:480px}
+/* Row 2: 3 equal columns */
+.fg-third{height:300px}
+/* Row 3: 2-col + 1-col */
+.fg-two{grid-column:span 2;height:340px}
+.fg-one{grid-column:span 1;height:340px}
 
 /* Cert Wall */
 .cert-wall-section{background:#f7faf8;padding:80px 22px}
@@ -179,41 +185,40 @@
   </div>
 </section>
 
-<!-- Factory Photo Gallery -->
-<section style="padding:0">
+<!-- Factory Photo Gallery — Clean 3-row layout, zero orphan gaps -->
+<section style="padding:0;background:#000">
   <div class="factory-gallery">
-    <div class="factory-gallery-item large">
-      <img alt="Pet clipper assembly line — workers at production workstations, Pawvera manufacturing partner" loading="lazy" src="https://sc02.alicdn.com/kf/H476ab5c0f39b41549450cef497e614bby.jpg"/>
-      <div class="caption">Main Assembly Line — Full Production Capacity</div>
+
+    <!-- Row 1: Full-width hero — most impressive shot: showroom -->
+    <div class="factory-gallery-item fg-hero">
+      <img alt="Pawvera pet clipper buyer showroom — full product range display for wholesale buyers" src="https://sc02.alicdn.com/kf/H2be68130e41046bd9bca0f756b0e0e2bq.jpg"/>
+      <div class="caption">Buyer Showroom — 20+ Models Available for Inspection</div>
     </div>
-    <div class="factory-gallery-item">
-      <img alt="Pet clipper precision assembly and testing workstation" loading="lazy" src="https://sc02.alicdn.com/kf/H88aa5c08159c40fbbe9a4150c7213db1P.jpg"/>
-      <div class="caption">Precision Assembly Workstations</div>
+
+    <!-- Row 2: 3 equal columns — production process left to right -->
+    <div class="factory-gallery-item fg-third">
+      <img alt="Pet clipper main assembly line with workers in production" loading="lazy" src="https://sc02.alicdn.com/kf/H476ab5c0f39b41549450cef497e614bby.jpg"/>
+      <div class="caption">Main Assembly Line</div>
     </div>
-    <div class="factory-gallery-item">
-      <img alt="Electric pet clipper production and quality inspection line" loading="lazy" src="https://sc02.alicdn.com/kf/H7e417e24fb5d436f86fa7e4d2e29c8b8b.jpg"/>
-      <div class="caption">QC Inspection & Charging Test Line</div>
+    <div class="factory-gallery-item fg-third">
+      <img alt="Precision QC inspection line for pet grooming clippers" loading="lazy" src="https://sc02.alicdn.com/kf/H7e417e24fb5d436f86fa7e4d2e29c8b8b.jpg"/>
+      <div class="caption">QC Testing & Calibration</div>
     </div>
-    <div class="factory-gallery-item">
-      <img alt="Packaging and logistics warehouse for pet clipper export" loading="lazy" src="https://sc02.alicdn.com/kf/H5222397088c34cb39b317744637d18b0o.jpg"/>
-      <div class="caption">Packaging & Shipping Preparation</div>
+    <div class="factory-gallery-item fg-third">
+      <img alt="Precision laboratory with microscopes and testing instruments" loading="lazy" src="https://sc02.alicdn.com/kf/H46e3659dc998472f98ad86e683195c96O.jpg"/>
+      <div class="caption">Precision R&D Laboratory</div>
     </div>
-    <div class="factory-gallery-item large">
-      <img alt="Pet clipper showroom with full product range on display for wholesale buyers" loading="lazy" src="https://sc02.alicdn.com/kf/H2be68130e41046bd9bca0f756b0e0e2bq.jpg"/>
-      <div class="caption">Buyer Showroom — Full Model Range Display</div>
+
+    <!-- Row 3: 2-col wide + 1-col — logistics -->
+    <div class="factory-gallery-item fg-two">
+      <img alt="Large-scale export warehouse with forklifts loading shipping containers" loading="lazy" src="https://sc02.alicdn.com/kf/Hd3d21cf2cdf24e81a8db8fbff76539a0c.jpg"/>
+      <div class="caption">Export Warehouse — Container Loading for EU & US Markets</div>
     </div>
-    <div class="factory-gallery-item">
-      <img alt="Precision lab testing equipment for pet clipper quality control" loading="lazy" src="https://sc02.alicdn.com/kf/H46e3659dc998472f98ad86e683195c96O.jpg"/>
-      <div class="caption">Precision R&D & QC Laboratory</div>
+    <div class="factory-gallery-item fg-one">
+      <img alt="Modern pet clipper manufacturing campus exterior" loading="lazy" src="https://sc02.alicdn.com/kf/H6c93e99431e44e71b893a8702b8c9761y.jpg"/>
+      <div class="caption">Manufacturing Campus · Hangzhou, China</div>
     </div>
-    <div class="factory-gallery-item">
-      <img alt="Large export warehouse with forklifts and shipping containers" loading="lazy" src="https://sc02.alicdn.com/kf/Hd3d21cf2cdf24e81a8db8fbff76539a0c.jpg"/>
-      <div class="caption">Export Warehouse & Container Loading</div>
-    </div>
-    <div class="factory-gallery-item">
-      <img alt="Modern pet clipper manufacturing facility exterior building" loading="lazy" src="https://sc02.alicdn.com/kf/H6c93e99431e44e71b893a8702b8c9761y.jpg"/>
-      <div class="caption">Modern Manufacturing Campus</div>
-    </div>
+
   </div>
 </section>
 
